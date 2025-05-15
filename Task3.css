@@ -1,0 +1,53 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-image: url("images.jpg");
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background: rgb(206, 206, 206);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #000000;
+  }
+  
+  .cell.x {
+    color: #ff1100;
+  }
+  
+  .cell.o {
+    color: #028cfd;
+  }
+  
+  .status {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #restartButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
